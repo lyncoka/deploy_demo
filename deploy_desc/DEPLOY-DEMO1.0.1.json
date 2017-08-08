@@ -1,0 +1,43 @@
+{
+  "description": {
+    "name": "deploy desc",
+    "version": "1.0.1",
+    "attachedinfo": "",
+    "vary": ""
+  },
+  "deletefiles": [],
+  "files": [
+    {
+      "component": "default",
+      "action": "update",
+      "filename": "_env.properties",
+      "destfilename": "classpath/_env.properties"
+    },
+    {
+      "component": "default",
+      "action": "update",
+      "filename": "deploy_demo.war",
+      "destfilename": "webapps/deploy_demo.war"
+    }
+  ],
+  "configs": [
+    {
+      "component": "default",
+      "action": "update",
+      "destfilename": "classpath/_env.properties",
+      "key": "env",
+      "desc": "env",
+      "value": {
+        "ci": "ci1.0.1ci",
+        "stg": "stg1.0.1stg",
+        "prd": "prd1.0.1prd"
+      }
+    }
+  ],
+  "sqls": {
+    "mysql": [
+      "db/pdemo/1.0.1/01_root_create.sql"
+    ]
+  },
+  "others": []
+}

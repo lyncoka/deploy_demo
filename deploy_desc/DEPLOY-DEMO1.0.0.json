@@ -1,0 +1,28 @@
+{
+        "description" : {
+                "name" : "deploy desc" ,
+                "version" : "1.0.0" ,
+                "attachedinfo" : "" , 
+                "vary" : ""
+        } ,
+        "deletefiles" : [] , 
+        "files" : [ 
+	        {
+	            "component": "default",
+	            "action": "update",
+	            "filename": "deploy_demo.war",
+	            "destfilename": "webapps/deploy_demo.war"
+	        },
+	        {
+	            "component": "default",
+	            "action": "update",
+	            "filename": "_env.properties",
+	            "destfilename": "classpath/_env.properties"
+	        }
+        ], 
+        "configs" : [
+	          
+        ],
+        
+        "others" : []
+}
